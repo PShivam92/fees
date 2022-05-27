@@ -1,0 +1,39 @@
+{ 
+    "name": "payments-smart-contracts", 
+    "version": "2.2.0", 
+    "description": "Smart contracts for Mysterium Network payments flow", 
+    "main": "index.js", 
+    "scripts": { 
+        "test": "truffle test", 
+        "e2e": "truffle test --network e2e", 
+        "compile": "truffle compile", 
+        "migrate": "truffle migrate", 
+        "flatten": "sh flattener.sh", 
+        "deploy-goerli": "truffle deploy --network goerli", 
+        "deploy-mumbai": "truffle deploy --network mumbai", 
+        "deploy-polygon": "truffle deploy --network polygon", 
+        "deploy-ethereum": "truffle deploy --network ethereum" 
+    },     
+    "author": "Jaro <me@jaro.lt>", 
+    "license": "GPL-3.0",  
+     
+    "dependencies": { 
+        "@ethereumjs/tx": "^3.3.2", 
+        "@ethersproject/contracts": "^5.4.1", 
+        "@ethersproject/providers": "^5.4.5", 
+        "@ethersproject/solidity": "^5.4.0", 
+        "@openzeppelin/contracts": "4.3.2", 
+        "@truffle/hdwallet-provider": "1.5.1", 
+        "chai": "^4.3.4", 
+        "chai-as-promised": "^7.1.1", 
+        "chai-bn": "^0.2.1", 
+        "eth-json-rpc-filters": "^4.2.2", 
+        "ethereumjs-util": "^7.0.10", 
+        "ganache-cli": "^6.12.2", 
+        "lodash": "^4.17.21", 
+        "secp256k1": "^4.0.2", 
+        "truffle": "^5.4.15", 
+        "truffle-flattener": "^1.5.0", 
+        "web3-utils": "^1.6.0" 
+    } 
+} 
